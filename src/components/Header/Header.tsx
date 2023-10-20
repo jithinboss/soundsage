@@ -29,11 +29,11 @@ const Header: React.FC<IHeader> = (props) => {
 					<Nav.Link eventKey="/" as={"div"}>
 						<Link to="/">Home</Link>
 					</Nav.Link>
-					<Nav.Link eventKey="/validations" as={"div"}>
-						<Link to="/validations">Courses</Link>
+					<Nav.Link eventKey="/courses" as={"div"}>
+						<Link to="/courses">Courses</Link>
 					</Nav.Link>
-					<Nav.Link eventKey="/settings" as={"div"}>
-						<Link to="/settings">Subscriptions</Link>
+					<Nav.Link eventKey="/subscriptions" as={"div"}>
+						<Link to="/subscriptions">Subscriptions</Link>
 					</Nav.Link>
 				</Nav>
 			</Navbar>
