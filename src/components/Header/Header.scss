@@ -68,7 +68,7 @@ header {
 				&:hover {
 
 					text-decoration: none;
-					color: $secondary-color;
+					color: $salmon;
 
 				}
 
@@ -88,6 +88,21 @@ header {
 					a {
 
 						color: $salmon;
+
+						&::after {
+
+							content: "";
+							height: 4px;
+							width: 20%;
+							background: $salmon;
+							position: absolute;
+							bottom: 12px;
+							left: 0;
+							right: 0;
+							margin: auto;
+
+						}
+
 					}
 
 				}
