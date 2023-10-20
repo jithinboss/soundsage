@@ -18,7 +18,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
 	font-family: 'Hanken Grotesk', sans-serif;
 	font-weight: 600;
 	line-height: 1.15;
@@ -52,7 +53,7 @@ small,
 
 a {
 
-	color: $black;
+	color: $link-color !important;
 	cursor: pointer;
 
 	&:hover {
