@@ -1,0 +1,88 @@
+.content-area {
+
+	&.home-page {
+
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 50%;
+		grid-gap: 16px;
+
+		.recent-courses,
+		.subscription-chart {
+
+			height: 100%;
+
+		}
+
+		.subscription-requests {
+
+			grid-column: span 2;
+			height: 100%;
+
+		}
+
+		.recent-courses {
+
+			.list-group {
+
+				&.course-list {
+
+					border: none;
+					margin: 8px 0;
+					height: 100%;
+
+					.list-group-item {
+
+						border: none;
+						background-color: $white;
+						//border-bottom: 1px solid light-shade($black, 90%);
+						display: flex;
+						justify-content: space-between;
+						padding: 8px;
+						height: 40px;
+						align-items: center;
+
+						&:nth-child(even) {
+
+							background-color: light-shade($baby-blue, 80%);
+
+						}
+
+						.name {
+
+							font-weight: 600;
+
+							a {
+
+								font-weight: normal;
+								color: $link-color;
+								cursor: pointer;
+								margin-right: 8px;
+
+								&:hover {
+
+									text-decoration: underline;
+
+								}
+
+							}
+
+						}
+
+						.date {
+
+							font-size: $font-size-sm;
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
