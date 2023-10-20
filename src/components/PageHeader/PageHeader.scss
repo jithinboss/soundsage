@@ -1,0 +1,29 @@
+.page-header {
+
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+
+        display: flex;
+        height: 42px;
+
+        .title {
+
+            display: inline-flex;
+            height: 42px;
+            margin-right: 32px;
+
+            h3 {
+
+                line-height: 42px;
+
+            }
+
+        }
+
+    }
+
+}

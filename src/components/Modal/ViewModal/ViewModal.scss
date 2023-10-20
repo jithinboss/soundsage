@@ -1,0 +1,62 @@
+.modal-dialog {
+
+    .modal-content {
+
+        .modal-header {
+
+            border-bottom: none;
+            padding-bottom: 4px;
+
+            .modal-title {
+
+                line-height: 32px;
+                height: 32px;
+
+            }
+
+            .btn {
+
+                &.btn-clear {
+
+                    margin: 0;
+                    padding: 0;
+                    min-width: unset;
+                    width: 32px;
+                    height: 32px;
+                    background-color: transparent !important;
+
+                    svg {
+
+                        margin: 0;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        .modal-body {
+
+            min-height: 420px;
+            height: 100%;
+
+            .modal-wrapper {
+
+                height: 100%;
+
+
+            }
+
+        }
+
+        .modal-footer {
+
+            border-top: none;
+
+        }
+
+    }
+
+}

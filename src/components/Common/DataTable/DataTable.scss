@@ -1,0 +1,83 @@
+.table-data {
+
+    padding: 8px;
+
+    .title {
+
+        margin-bottom: 8px;
+        padding-left: 8px;
+
+    }
+
+    .p-datatable {
+
+        .p-datatable-wrapper {
+
+            table {
+
+                &.p-datatable-table {
+
+                    thead {
+
+                        &.p-datatable-thead {
+
+                            tr {
+
+                                th {
+
+                                    padding: 0;
+                                    background-color: transparent;
+                                    border-color: light-shade($primary-color, 80%);
+
+                                    .p-column-header-content {
+
+                                        height: 32px;
+                                        padding: 0 16px;
+
+                                        span {
+
+                                            font-size: 0.8rem;
+                                            color: $black;
+                                            font-weight: normal;
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                    tbody {
+
+                        &.p-datatable-tbody {
+
+                            tr {
+
+                                td {
+
+                                    height: 40px;
+                                    padding: 0 16px;
+                                    font-size: 0.8rem;
+                                    color: $body-font-color;
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+}

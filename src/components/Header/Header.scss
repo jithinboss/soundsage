@@ -1,0 +1,149 @@
+header {
+
+	height: 60px;
+	padding: 0 0 0 32px;
+	background-color: $white;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid light-shade($black, 90%);
+
+	.navbar {
+
+		height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+
+		span {
+
+			padding: 0;
+
+		}
+
+		.logo {
+
+			height: 28px;
+			padding-right: 32px;
+			display: inline-flex;
+			position: relative;
+			margin-bottom: 1px;
+
+			img {
+
+				height: 32px;
+
+			}
+
+			&::after {
+
+				content: "";
+				width: 0.5px;
+				height: 42px;
+				background-color: light-shade($black, 90%);
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				margin: auto;
+
+			}
+
+		}
+
+		.navbar-nav {
+
+			height: 60px;
+
+			.nav-link {
+
+				line-height: 60px;
+				height: 60px;
+				padding: 0;
+				color: $white;
+				font-size: $font-size-h6;
+				font-weight: 700;
+				position: relative;
+				@include transition(color 0.3s ease-in-out);
+
+				&:hover {
+
+					text-decoration: none;
+					color: $secondary-color;
+
+				}
+
+				a {
+
+					color: $black;
+					text-decoration: none;
+					padding: 0 32px;
+					line-height: 60px;
+					height: 60px;
+					display: block;
+
+				}
+
+				&.active {
+
+					a {
+
+						color: $salmon;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.user-info {
+
+		display: flex;
+		align-items: center;
+		padding: 0 24px 0 16px;
+		cursor: pointer;
+		@include transition(background-color 0.3s ease-in-out);
+
+		.user-details {
+
+			display: flex;
+			flex-direction: column;
+			padding-left: 8px;
+
+			span {
+
+				color: $black;
+				display: block;
+				font-size: $font-size-sm;
+
+				&.name {
+
+					font-weight: 600;
+					margin-bottom: 4px;
+
+				}
+
+			}
+
+		}
+
+		.user-img {
+
+			height: 32px;
+			width: 32px;
+
+			img {
+
+				height: 32px;
+				width: 32px;
+				clip-path: circle(50%);
+
+			}
+
+		}
+
+	}
+
+}

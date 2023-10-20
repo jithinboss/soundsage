@@ -1,0 +1,204 @@
+button {
+	display: inline-block;
+	border: none;
+	padding: 16px 32px;
+	margin: 0;
+	text-decoration: none;
+	color: #ffffff;
+	font-family: 'League Spartan', sans-serif;
+	cursor: pointer;
+	text-align: center;
+	@include transition(all .200s ease-in-out);
+	vertical-align: baseline;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+
+	background: light-shade($primary-color, 10%);
+
+}
+
+
+
+.btn {
+
+	margin: 0 8px;
+	padding: 0 12px;
+	height: 40px;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 40px;
+	min-width: 92px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-around;
+
+	svg {
+
+		height: 20px;
+		width: 20px;
+		margin-right: 8px;
+
+	}
+
+	&.icon-only {
+
+		width: 40px;
+		min-width: unset;
+		padding: 0;
+		justify-content: center;
+
+		svg {
+
+			margin-right: 0;
+
+		}
+
+	}
+
+	//Primary
+
+	&.btn-primary {
+
+
+		background-color: light-shade($primary-color, 10%);
+		border-color: light-shade($primary-color, 60%);
+
+		&:hover {
+
+			@include box-shadow(7px 5px 3px 1px rgba(0, 0, 0, 0.15));
+
+		}
+
+		&:hover,
+		&:focus {
+
+			background: dark-shade($primary-color, 10%);
+
+		}
+
+		&:active {
+
+			border-color: dark-shade($primary-color, 40%);
+			background-color: $primary-color;
+			@include box-shadow(7px 5px 3px 1px rgba(0, 0, 0, 0.15));
+
+		}
+
+		//Primary Outline
+
+		&.outline {
+
+			background-color: light-shade($primary-color, 80%);
+			border-color: light-shade($primary-color, 60%);
+			color: $primary-color;
+
+			&:hover {
+
+				@include box-shadow(7px 5px 3px 1px rgba(0, 0, 0, 0.15));
+
+			}
+
+			&:hover,
+			&:focus {
+
+				background: light-shade($primary-color, 70%);
+
+			}
+
+			&:active {
+
+				border-color: dark-shade($primary-color, 40%);
+				background-color: light-shade($primary-color, 80%);
+				@include box-shadow(7px 5px 3px 1px rgba(0, 0, 0, 0.15));
+
+			}
+
+		}
+
+		&.link {
+
+			background-color: transparent;
+			border-color: transparent;
+			color: $primary-color;
+
+			&:hover,
+			&:focus {
+
+				background: light-shade($primary-color, 90%);
+				text-decoration: underline;
+
+			}
+
+		}
+
+		&.clear {
+
+			background-color: transparent;
+			border-color: transparent;
+			color: $primary-color;
+
+			&:hover,
+			&:focus {
+
+				background: light-shade($primary-color, 90%);
+
+			}
+
+		}
+
+	}
+
+
+	// Secondary
+	&.btn-secondary {
+
+		background-color: $secondary-color;
+		border-color: light-shade($secondary-color, 60%);
+
+		&:hover {
+
+			@include box-shadow(7px 5px 3px 1px rgba(0, 0, 0, 0.15));
+
+		}
+
+		&:hover,
+		&:focus {
+
+			background: dark-shade($secondary-color, 10%);
+
+		}
+
+		&:active {
+
+			border-color: dark-shade($secondary-color, 40%);
+			background-color: $secondary-color;
+			@include box-shadow(7px 5px 3px 1px rgba(0, 0, 0, 0.15));
+
+		}
+
+	}
+
+	// Clear
+	&.btn-clear {
+
+		color: $primary-color;
+
+		&:active {
+
+			border-color: light-shade($primary-color, 60%);
+			background-color: light-shade($primary-color, 98%);
+			@include box-shadow(7px 5px 3px 1px rgba(0, 0, 0, 0.15));
+
+		}
+
+
+	}
+
+
+
+
+}

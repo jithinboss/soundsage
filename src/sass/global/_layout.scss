@@ -1,0 +1,54 @@
+body {
+
+    #root {
+
+        height: 100%;
+        width: 100%;
+
+        .main-layout {
+
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .content-area {
+
+            height: calc(100% - 60px);
+            padding: 24px 32px 16px;
+
+            .card {
+
+                border-color: light-shade($primary-color, 80%);
+                @include transition(box-shadow 0.2s ease-in-out);
+
+                &:hover {
+
+                    box-shadow: 0 3px 8px rgba(213, 218, 222, 1);
+                    cursor: pointer;
+
+                }
+
+
+            }
+
+        }
+
+    }
+
+}
+
+
+.mr-8 {
+
+    margin-right: 8px;
+
+}
+
+.pr-8 {
+
+    padding-right: 8px;
+
+}

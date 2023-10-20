@@ -1,0 +1,71 @@
+.p-contextmenu {
+
+    padding: 0;
+    border: 1px solid light-shade($black, 80%);
+    @include border-radius(0);
+    @include box-shadow(0 2px 4px 0 rgba(154, 161, 171, .40));
+    width: auto;
+    min-width: 175px;
+    z-index: 9999 !important;
+    overflow: hidden;
+
+
+    .p-menuitem {
+
+        .p-menuitem-link {
+
+            padding: 8px 16px;
+
+            .p-menuitem-text {
+
+                color: $body-font-color;
+                font-size: $font-size-sm;
+            }
+
+            &:hover {
+
+                background: light-shade($primary-color, 90%) !important;
+
+                .p-menuitem-text {
+
+                    color: dark-shade($body-font-color, 10%) !important;
+
+                }
+
+            }
+
+            &:focus {
+
+                @include box-shadow(none);
+
+            }
+
+        }
+
+
+        &.p-menuitem-active {
+
+            .p-menuitem-link {
+
+                background: light-shade($primary-color, 90%) !important;
+
+                .p-menuitem-text {
+
+                    color: dark-shade($body-font-color, 10%) !important;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .p-menu-separator {
+
+        margin: 4px 8px !important;
+        border-bottom-color: light-shade($primary-color, 80%) !important;
+
+    }
+
+}

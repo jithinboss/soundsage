@@ -1,0 +1,157 @@
+@import "loginPattern.scss";
+
+.login-section {
+
+	min-height: 100%;
+	/* Fallback for browsers do NOT support vh unit */
+	min-height: 100vh;
+	/* These two lines are counted as one :-)       */
+
+	display: flex;
+	align-items: center;
+
+	.container-fluid {
+
+		background-color: $white;
+		position: relative;
+		overflow: hidden;
+
+		.login-form {
+
+			width: 320px;
+			padding: 16px;
+			margin: 0 auto;
+
+			.logo {
+
+				margin-bottom: 48px;
+
+			}
+
+			.title {
+
+				margin-bottom: 24px;
+
+			}
+
+			.login-button {
+
+				display: flex;
+				border: 1px solid light-shade($baby-blue, 0);
+				@include border-radius(4px);
+				padding: 8px;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+				margin-bottom: 16px;
+
+				&:hover {
+
+					background-color: light-shade($baby-blue, 80%);
+
+				}
+
+				img {
+
+					height: 28px;
+					width: 28px;
+
+				}
+
+				span {
+
+					display: inline-block;
+					line-height: 20px;
+					height: 20px;
+					margin-left: 12px;
+
+
+				}
+
+			}
+
+			.btn {
+
+				&.login {
+
+					margin: 32px 0 0 0;
+					width: 100%;
+
+				}
+
+			}
+
+		}
+
+		.banner-masonry {
+
+			height: 100%;
+			width: 100%;
+
+			.banner_img {
+
+				height: 100%;
+				width: 100%;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+
+			}
+
+
+
+		}
+
+		// .banner-masonry_wrapper {
+
+		// 	height: 100%;
+		// 	width: 100%;
+		// 	display: flex;
+		// 	align-items: center;
+		// 	justify-content: center;
+
+		// 	.banner-masonry {
+
+		// 		width: 640px;
+		// 		padding: 24px;
+		// 		display: grid;
+		// 		grid-template-columns: repeat(2, 1fr);
+		// 		grid-gap: 24px;
+
+		// 		.banner_img {
+
+		// 			background-size: contain;
+		// 			background-repeat: no-repeat;
+
+		// 			&:nth-child(1) {
+
+		// 				grid-column: span 2;
+		// 				grid-row: span 1;
+		// 				height: 220px;
+		// 				background-position: bottom center;
+
+		// 			}
+
+		// 			&:nth-child(2) {
+
+		// 				background-position: right top;
+		// 				height: 420px;
+
+		// 			}
+
+		// 			&:nth-child(3) {
+
+		// 				background-position: left top;
+
+		// 			}
+
+		// 		}
+
+		// 	}
+
+		// }
+
+
+	}
+
+}

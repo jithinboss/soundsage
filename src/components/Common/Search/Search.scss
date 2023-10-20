@@ -1,0 +1,23 @@
+.search-comp {
+
+    width: 320px;
+    position: relative;
+
+    .form-control {
+
+        padding-right: 36px;
+
+    }
+
+    svg {
+
+        position: absolute;
+        right: 12px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        color: light-shade($primary-color, 30%);
+
+    }
+
+}
