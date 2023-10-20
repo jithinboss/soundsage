@@ -40,7 +40,7 @@ const Subsriptions: React.FC<ISubsriptions> = (props) => {
 				<Card.Body>
 					<div className='table-data'>
 						<div className='title'>
-							<h5>Courses</h5>
+							<h5>Subscriptions</h5>
 						</div>
 						<DataTable dataKey='key' value={subscriptionsData}>
 							<Column field="name" header="Name"></Column>
