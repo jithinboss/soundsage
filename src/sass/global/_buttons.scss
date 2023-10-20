@@ -203,6 +203,7 @@ button:focus {
 .dropdown {
 
 	display: inline-flex;
+	height: 32px;
 
 	.btn-dropdown {
 
@@ -211,6 +212,7 @@ button:focus {
 			height: 32px;
 			font-size: $font-size-base;
 			border: none;
+			background-color: $white;
 
 			&::after {
 
@@ -234,6 +236,25 @@ button:focus {
 			&:focus {
 
 				background-color: none;
+
+			}
+
+		}
+
+	}
+
+	.dropdown-menu {
+
+		border-color: light-shade($black, 90%);
+
+		.dropdown-item {
+
+			color: $black;
+
+			&:hover {
+
+				background-color: light-shade($black, 95%);
+				text-decoration: unset;
 
 			}
 

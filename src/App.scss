@@ -10,8 +10,9 @@
 
 // Common
 // ------------------------------------------------------------
-@import "./components/Common/DropdownMenu/DropdownMenu.scss";
-@import "./components/Common/DropdownSelector/DropdownSelector.scss";
+// @import "./components/Common/DropdownMenu/DropdownMenu.scss";
+// @import "./components/Common/DropdownSelector/DropdownSelector.scss";
+
 @import "./components/Common/Search/Search.scss";
 @import "./components/Common/ContextMenu/ContextMenu.scss";
 @import "./components/Common/Tabs/Tabs.scss";
@@ -28,3 +29,4 @@
 // ------------------------------------------------------------
 @import "pages/Login/Login.scss";
 @import "pages/Home/Home.scss";
+@import "pages/Courses/Courses.scss";

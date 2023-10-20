@@ -1,83 +1,92 @@
 .table-data {
 
-    padding: 8px;
+	padding: 8px;
 
-    .title {
+	.title {
 
-        margin-bottom: 8px;
-        padding-left: 8px;
+		margin-bottom: 16px;
 
-    }
+	}
 
-    .p-datatable {
+	.p-datatable {
 
-        .p-datatable-wrapper {
+		.p-datatable-wrapper {
 
-            table {
+			table {
 
-                &.p-datatable-table {
+				&.p-datatable-table {
 
-                    thead {
+					thead {
 
-                        &.p-datatable-thead {
+						&.p-datatable-thead {
 
-                            tr {
+							tr {
 
-                                th {
+								th {
 
-                                    padding: 0;
-                                    background-color: transparent;
-                                    border-color: light-shade($primary-color, 80%);
+									padding: 0;
+									background-color: transparent;
+									border-color: $white;
 
-                                    .p-column-header-content {
+									.p-column-header-content {
 
-                                        height: 32px;
-                                        padding: 0 16px;
+										height: 32px;
+										padding: 0 16px;
 
-                                        span {
+										span {
 
-                                            font-size: 0.8rem;
-                                            color: $black;
-                                            font-weight: normal;
+											font-size: $font-size-sm;
+											color: $black;
+											font-weight: 600;
 
-                                        }
+										}
 
-                                    }
+									}
 
-                                }
+								}
 
-                            }
+							}
 
-                        }
+						}
 
-                    }
+					}
 
-                    tbody {
+					tbody {
 
-                        &.p-datatable-tbody {
+						&.p-datatable-tbody {
 
-                            tr {
+							tr {
 
-                                td {
+								td {
 
-                                    height: 40px;
-                                    padding: 0 16px;
-                                    font-size: 0.8rem;
-                                    color: $body-font-color;
+									height: 40px;
+									padding: 0 16px;
+									font-size: $font-size-h6;
+									color: $body-font-color;
+									border-color: light-shade($black, 90%);
 
-                                }
+								}
 
-                            }
+								&:last-child {
 
-                        }
+									td {
 
-                    }
+										border-color: $white;
 
-                }
+									}
+								}
 
-            }
+							}
 
-        }
+						}
 
-    }
+					}
+
+				}
+
+			}
+
+		}
+
+	}
 }

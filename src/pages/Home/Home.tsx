@@ -51,20 +51,30 @@ const Home: React.FC<IHome> = (props) => {
 					<Card.Body>
 						<div className='card-title'>
 							<h6>Courses Subscription</h6>
+							<Dropdown>
+								<Dropdown.Toggle variant="dropdown basic">
+									Violin
+								</Dropdown.Toggle>
+								<Dropdown.Menu>
+									<Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+									<Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+									<Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+								</Dropdown.Menu>
+							</Dropdown>
 						</div>
-						<Dropdown>
-							<Dropdown.Toggle variant="dropdown basic">
-								Dropdown Button
-							</Dropdown.Toggle>
-							<Dropdown.Menu>
-								<Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-								<Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-								<Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-							</Dropdown.Menu>
-						</Dropdown>
-						<BarChart width={150} height={40} data={chartData}>
-							<Bar dataKey="uv" fill="#8884d8" />
-						</BarChart>
+						<div className='charts-wrapper'>
+							<ResponsiveContainer>
+								<BarChart data={chartData} margin={{
+									top: 10,
+									right: 30,
+									left: 0,
+									bottom: 0,
+								}}>
+									<Bar dataKey="uv" fill="#A3A3F5" barSize={24} />
+									<XAxis dataKey="name" axisLine={false} tickLine={false} />
+								</BarChart>
+							</ResponsiveContainer>
+						</div>
 					</Card.Body>
 				</Card>
 			</div>
@@ -74,13 +84,15 @@ const Home: React.FC<IHome> = (props) => {
 						<div className='card-title'>
 							<h6>Subscription Requests</h6>
 						</div>
-						<DataTable dataKey='key' value={subscriptionData} tableStyle={{ minWidth: '50rem' }}>
-							<Column field="name" header="Name"></Column>
-							<Column field="email" header="Email" body={mailTemplate}></Column>
-							<Column field="phoneNumber" header="Phone Number"></Column>
-							<Column field="requestedOn" header="Requested On"></Column>
-							<Column field="discipline" header="Discipline"></Column>
-						</DataTable>
+						<div className='table-data'>
+							<DataTable dataKey='key' value={subscriptionData} tableStyle={{ minWidth: '50rem' }}>
+								<Column field="name" header="Name"></Column>
+								<Column field="email" header="Email" body={mailTemplate}></Column>
+								<Column field="phoneNumber" header="Phone Number"></Column>
+								<Column field="requestedOn" header="Requested On"></Column>
+								<Column field="discipline" header="Discipline"></Column>
+							</DataTable>
+						</div>
 					</Card.Body>
 				</Card>
 			</div>

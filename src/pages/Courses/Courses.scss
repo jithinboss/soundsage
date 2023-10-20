@@ -1,0 +1,65 @@
+.content-area {
+
+	&.courses {
+
+		.table-data {
+
+			height: 100%;
+
+		}
+
+		.p-treetable {
+
+			&.p-component {
+
+				height: 100%;
+
+				.p-treetable-wrapper {
+
+					height: 100%;
+
+					.p-treetable-table {
+
+						.p-treetable-thead {
+
+							display: none;
+
+						}
+
+						.p-treetable-tbody {
+
+							tr {
+
+								td {
+
+									padding: 8px;
+
+									.p-treetable-toggler {
+
+										&.p-link {
+
+											height: 32px;
+											width: 32px;
+
+										}
+
+
+									}
+
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
