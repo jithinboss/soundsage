@@ -19,7 +19,7 @@ const App: React.FC<IApp> = (props) => {
 
 	const login = useCallback(() => {
 		setIsLoggedIn(true);
-		navigate("/bots");
+		navigate("/");
 	}, []);
 
 	return <>{!isLoggedIn ? <Login onSubmit={login} /> : <Layout />}</>;

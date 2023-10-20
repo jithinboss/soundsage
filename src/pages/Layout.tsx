@@ -4,6 +4,8 @@ import { Routes, Route } from "react-router-dom";
 import Header from "../components/Header/Header";
 //Pages
 import Home from "../pages/Home/Home";
+import Courses from "./Courses/Courses";
+import Subsriptions from "./Subscriptions/Subsriptions";
 
 
 interface ILayout { }
@@ -14,6 +16,8 @@ const Layout: React.FC<ILayout> = (props) => {
 			<Header />
 			<Routes>
 				<Route index path="/" element={<Home />} />
+				<Route index path="/courses" element={<Courses />} />
+				<Route index path="/subscriptions" element={<Subsriptions />} />
 			</Routes>
 		</div>
 	);
